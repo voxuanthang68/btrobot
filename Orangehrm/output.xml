@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.11.9 on win32)" generated="2025-04-27T14:12:09.249739" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Test Orangehrm" source="D:\DangMinhTu\tudonghoa\Orangehrm\login_test_orangehrm.robot">
+<test id="s1-t1" name="Valid Login" line="13">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-27T14:12:09.448636" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-27T14:12:09.448636" elapsed="11.234856"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-04-27T14:12:20.683492" elapsed="0.031834"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-27T14:12:20.715326" level="INFO">Typing text 'Admin' into text field 'xpath=//input[@name="username"]'.</msg>
+<msg time="2025-04-27T14:12:20.869411" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-04-27T14:12:20.869411" level="FAIL">Element with locator 'xpath=//input[@name="username"]' not found.</msg>
+<arg>xpath=//input[@name="username"]</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2025-04-27T14:12:20.715326" elapsed="0.154085">Element with locator 'xpath=//input[@name="username"]' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath=//input[@name="password"]</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-27T14:12:20.880214" elapsed="0.000553"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath=//button[@type="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-27T14:12:20.880767" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-27T14:12:20.881369" elapsed="0.000000"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<arg>xpath=//h6[text()='Dashboard']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" start="2025-04-27T14:12:20.881816" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-04-27T14:12:20.882260" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-04-27T14:12:09.448636" elapsed="11.434090">Element with locator 'xpath=//input[@name="username"]' not found.</status>
+</test>
+<test id="s1-t2" name="Invalid Login" line="23">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-27T14:12:20.884358" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-27T14:12:20.884358" elapsed="4.566456"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-04-27T14:12:25.450814" elapsed="0.028750"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-27T14:12:25.479564" level="INFO">Typing text 'Admin' into text field 'xpath=//input[@name="username"]'.</msg>
+<msg time="2025-04-27T14:12:25.664513" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-04-27T14:12:25.664513" level="FAIL">Element with locator 'xpath=//input[@name="username"]' not found.</msg>
+<arg>xpath=//input[@name="username"]</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2025-04-27T14:12:25.479564" elapsed="0.186494">Element with locator 'xpath=//input[@name="username"]' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath=//input[@name="password"]</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-27T14:12:25.666058" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath=//button[@type="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-27T14:12:25.666058" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-27T14:12:25.666058" elapsed="0.000000"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Invalid credentials</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2025-04-27T14:12:25.666058" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-04-27T14:12:25.666058" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-04-27T14:12:20.883612" elapsed="4.782446">Element with locator 'xpath=//input[@name="username"]' not found.</status>
+</test>
+<doc>Test login trang OrangeHRM</doc>
+<status status="FAIL" start="2025-04-27T14:12:09.249739" elapsed="16.416319"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Login Test Orangehrm" id="s1" pass="0" fail="2" skip="0">Login Test Orangehrm</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
